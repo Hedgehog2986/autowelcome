@@ -22,7 +22,9 @@ public abstract class chatMixin {
         var welcomeMessage = "";
         try {
             welcomeMessage = new Scanner(messageFile).nextLine();
-        } catch (FileNotFoundException ignored) {}
+        } catch (FileNotFoundException ignored) {
+            welcomeMessage = "welcome";
+        }
         if (messageString.equals("[ WELCOME ]")) {
             assert MinecraftClient.getInstance().player != null;
             MinecraftClient.getInstance().player.sendChatMessage(welcomeMessage);
