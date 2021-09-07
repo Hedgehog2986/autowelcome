@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "autowelcome",
+  "version": "${version}",
+  "name": "Autowelcome",
+  "description": "Sends a welcome message for new players on applecraft",
+  "authors": [
+    "Hedgehog2986"
+  ],
+  "contact": {
+    "repo": "https://github.com/Hedgehog2986/autowelcome"
+  },
+  "license": "MIT",
+  "icon": "assets/autowelcome/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.hedgehog2986.autowelcome.client.AutowelcomeClient"
+    ],
+    "main": [
+      "com.hedgehog2986.autowelcome.Autowelcome"
+    ]
+  },
+  "mixins": [
+    "autowelcome.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
