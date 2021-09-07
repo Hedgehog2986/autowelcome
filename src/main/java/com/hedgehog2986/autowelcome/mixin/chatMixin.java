@@ -28,7 +28,7 @@ public abstract class chatMixin {
         if (messageString.startsWith("[ WELCOME ]")) {
             var username = messageString.split(" ")[4];
             assert MinecraftClient.getInstance().player != null;
-            MinecraftClient.getInstance().player.sendChatMessage(welcomeMessage.replace("[user]",username));
+            MinecraftClient.getInstance().player.sendChatMessage("/g "+welcomeMessage.replace("[user]",username));
         }
     }
 }
