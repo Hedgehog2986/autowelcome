@@ -1,5 +1,5 @@
 # autowelcome
-fabric 1.17 mod to welcome new players on applecraft
+fabric mod to welcome new players on applecraft
 
 # how to use
 Download the latest release and put into your .minecraft/mods/ folder. 
